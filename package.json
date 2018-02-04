@@ -1,0 +1,26 @@
+{
+  "name": "web-ui",
+  "version": "1.0.0",
+  "description": "UI Components, Web UI and FE",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangding/web-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangding/web-ui/issues"
+  },
+  "homepage": "https://github.com/wangding/web-ui#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-eslint": "0.0.5",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-htmlhint": "^0.9.13"
+  }
+}
