@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "order-alphabetical",
+    "ids" ,
+    "box-model" ,
+    "outline-none" 
+  ]
+}
