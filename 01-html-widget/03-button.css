@@ -1,0 +1,79 @@
+body, p {
+  font-family: 微软雅黑;
+  font-size: 1em;
+  line-height: 2em;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+header, article {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+table {
+  text-align: center;
+  border: 1px solid;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 1px 1px 10px #666; 
+}
+
+th {
+  border: 1px solid;
+  color: black;
+}
+
+tbody td:nth-child(1) {
+  width: 15%;
+}
+
+tbody td:nth-child(2) {
+  width: 35%;
+}
+
+td{
+  border: 1px solid;
+}
+
+input{
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  margin: 8px auto;
+  font-size: 1.1em;
+}
+
+#btnPlay {
+  background-image: url('images/paly.png');
+  background-size: contain;
+  width: 40px;
+  border-radius: 20px;
+  outline: none;
+}
+
+#btnPause {
+  background-image: url('images/pause.png');
+  background-size: contain;
+  width: 40px;
+  border-radius: 20px;
+  outline: none;
+}
+
+#btnStop{
+  background-image: url('images/stop.png');
+  background-size: contain;
+  width: 40px;
+  border-radius: 20px;
+  outline: none;
+}
+
+#txt{
+  margin: 0 auto;
+  width: 165px;
+}
