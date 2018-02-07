@@ -1,0 +1,45 @@
+body {
+  font-family: 微软雅黑;
+  font-size: 1em;
+  line-height: 2em;
+}
+  table{
+    text-align:center;
+    height:400px;    
+  }
+  td{
+    width:100px;
+    padding:15px 15px;
+  }
+  input{
+    display:inline-block;
+    width:90px;
+    height:45px;
+    font-size:20px;
+  }
+  .dis{
+    color:grey;
+  }
+  #cirBtn{
+    border-radius:15px;
+  }
+  #imgBtn{
+    background-image:url('./images/paly.png');
+  }
+  #imgBtn2{
+    background-image:url('./images/pause.png');
+  }
+  #imgBtn3{
+    background-image:url('./images/stop.png');
+  }
+  .play{
+    width:40px;
+    height:40px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    border-radius:20px;
+  }
+  #txt{
+    width:165px;
+  }
