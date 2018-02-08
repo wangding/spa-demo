@@ -18,14 +18,12 @@ h1 {
 
 table {
   text-align: center;
-  border: 1px solid;
   width: 100%;
   border-collapse: collapse;
   box-shadow: 1px 1px 10px #666; 
 }
 
 th {
-  border: 1px solid;
   color: black;
 }
 
@@ -37,11 +35,11 @@ tbody td:nth-child(2) {
   width: 35%;
 }
 
-td{
+td, th, table {
   border: 1px solid;
 }
 
-input{
+input {
   display: inline-block;
   width: 90px;
   height: 40px;
@@ -51,29 +49,19 @@ input{
 
 #btnPlay {
   background-image: url('images/paly.png');
-  background-size: contain;
-  width: 40px;
-  border-radius: 20px;
-  outline: none;
 }
 
 #btnPause {
   background-image: url('images/pause.png');
-  background-size: contain;
-  width: 40px;
-  border-radius: 20px;
-  outline: none;
 }
 
-#btnStop{
+#btnStop {
   background-image: url('images/stop.png');
+}
+
+#btnPlay, #btnPause, #btnStop {
   background-size: contain;
   width: 40px;
   border-radius: 20px;
   outline: none;
-}
-
-#txt{
-  margin: 0 auto;
-  width: 165px;
 }
