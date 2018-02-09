@@ -1,0 +1,35 @@
+body {
+  font-family: 微软雅黑;
+  font-size: 1em;
+  line-height: 2em;
+}
+form{
+  border:1px solid #bbb;
+  width:400px;
+  margin:50px auto 0;
+  padding:20px 20px;
+}
+input,textarea,select,label{
+  margin:10px 10px;
+  font-size:1.2em;
+}
+textarea{
+  margin-left:80px;
+}
+#study{
+  width:245px;
+}
+#birth{
+  width:240px;
+}
+#birth,select{
+  height:28px;
+}
+#btn,#reset{
+  position:relative;
+  left:190px;
+  width:60px;
+  height:30px;
+  font-size:1em;
+}
+
