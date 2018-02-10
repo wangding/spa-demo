@@ -1,0 +1,41 @@
+body {
+  font-family: 微软雅黑;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+form{
+  width: 310px;
+  margin: 20px auto 0;
+  padding: 20px 20px;
+}
+
+input, textarea, select, label{
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+textarea{
+  margin-left: 65px;
+  width: 232px;
+}
+
+#study{
+  width: 240px;
+}
+
+#birth{
+  width: 234px;
+}
+
+#birth, select{
+  height: 28px;
+}
+
+#btnOk, #btnReset{
+  position: relative;
+  left: 180px;
+  width: 60px;
+  height: 30px;
+  font-size: 1em;
+}
