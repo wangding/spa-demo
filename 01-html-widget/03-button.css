@@ -1,45 +1,67 @@
-body {
+body, p {
   font-family: 微软雅黑;
   font-size: 1em;
   line-height: 2em;
+  color: #4a4a4a;
+  margin: 0;
 }
-  table{
-    text-align:center;
-    height:400px;    
-  }
-  td{
-    width:100px;
-    padding:15px 15px;
-  }
-  input{
-    display:inline-block;
-    width:90px;
-    height:45px;
-    font-size:20px;
-  }
-  .dis{
-    color:grey;
-  }
-  #cirBtn{
-    border-radius:15px;
-  }
-  #imgBtn{
-    background-image:url('./images/paly.png');
-  }
-  #imgBtn2{
-    background-image:url('./images/pause.png');
-  }
-  #imgBtn3{
-    background-image:url('./images/stop.png');
-  }
-  .play{
-    width:40px;
-    height:40px;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:contain;
-    border-radius:20px;
-  }
-  #txt{
-    width:165px;
-  }
+
+header, article {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 1px 1px 10px #666; 
+}
+
+th {
+  color: black;
+}
+
+tbody td:nth-child(1) {
+  width: 15%;
+}
+
+tbody td:nth-child(2) {
+  width: 35%;
+}
+
+td, th, table {
+  border: 1px solid;
+}
+
+input {
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  margin: 8px auto;
+  font-size: 1.1em;
+}
+
+#btnPlay {
+  background-image: url('images/paly.png');
+}
+
+#btnPause {
+  background-image: url('images/pause.png');
+}
+
+#btnStop {
+  background-image: url('images/stop.png');
+}
+
+#btnPlay, #btnPause, #btnStop {
+  background-size: contain;
+  width: 40px;
+  border-radius: 20px;
+  outline: none;
+}

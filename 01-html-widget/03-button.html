@@ -3,42 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-  <link rel="stylesheet" href="./03-button.css">
-  <title>HTML 按钮类控件常见样式</title>
+  <link rel="stylesheet" href="03-button.css">
+  <title>按钮类控件常见样式</title>
 </head>
 <body>
-<h3>以下是按钮各种样式属性的例子：</h3>
-<table border="1" cellspacing="0">
-<tr>
-    <th>序号</th>
-    <th>样式</th>
-    <th>效果</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Enabled 按钮</td>
-    <td><input id="enabledBtn" type="button" value="警告" name="alert"></td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Disabled 按钮</td>
-    <td><input class="dis" id="disabledBtn" type="button" value="同意" name="alert"></td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>图片按钮</td>
-    <td><input class="play" id="imgBtn" type="button" value="" name="alert">
-    <input class="play" id="imgBtn2" type="button" value="" name="alert">
-    <input class="play" id="imgBtn3" type="button" value="" name="alert">
-    <p id="txt">目前状态：初始化</p>
-  </td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>圆角按钮</td>
-    <td><input id="cirBtn" type="button" value="重置" name="alert"></td>
-  </tr>
-</table>
+<header><h1>按钮的各种样式</h1></header>
+<article>
+  <table>
+    <tr>
+        <th>序号</th>
+        <th>样式</th>
+        <th>效果</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Enabled</td>
+        <td><input id="btnEnabled" type="button" value="按钮"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Disabled</td>
+        <td><input id="btnDisabled" type="button" value="同意"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>图片按钮</td>
+        <td><input id="btnPlay" type="button">
+        <input id="btnPause" type="button">
+        <input id="btnStop" type="button">
+        <p>目前状态：<span id="status"></span></p>
+      </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>圆角按钮</td>
+        <td><input id="btnRound" type="button" value="重置"></td>
+      </tr>
+  </table>
+</article>
 </body>
 <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="03-button.js"></script>
