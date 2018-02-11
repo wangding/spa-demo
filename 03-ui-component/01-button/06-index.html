@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>定时器按钮组件测试</title>
+  <link rel="stylesheet" href="03-button.css">
+  <style>
+  .box {
+    margin: 50px auto;
+    width: 130px;
+  }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="06-button.js"></script>
+<script>
+  var i = 50;
+  console.log(i);
+  
+  $(function() {
+      $timerButton.init({
+        'container': 'div.box',
+        'timer': 6,
+        'text': '确定'});
+  });
+</script>
+</html>
