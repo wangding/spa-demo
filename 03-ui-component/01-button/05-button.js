@@ -1,7 +1,3 @@
-$(function() {
-  $timerButton.init();
-});
-
 var $timerButton = (function() {
   var init;
   var $btn, 
