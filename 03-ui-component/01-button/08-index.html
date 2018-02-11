@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>定时器按钮组件测试</title>
+  <link rel="stylesheet" href="03-button.css">
+  <style>
+  div {
+    margin: 50px auto;
+    width: 130px;
+  }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="08-button.js"></script>
+<script>
+  var i = 50;
+  console.log(i);
+  
+  $(function() {
+      var btn1 = new TimerButton({
+        'container': 'div.box1',
+        'enabled': false,
+        'duration': 6,
+        'text': '同意'});
+      
+      btn1.on('timer-button-click', function(){
+        alert('你终于同意了！');
+      });
+      
+      var btn2 = new TimerButton({
+        'container': 'div.box2',
+        'enabled': true,
+        'duration': 6,
+        'text': '短信验证码'});
+      
+      btn2.on('timer-button-click', function(){
+        alert('已经向您的手机号发送短信验证码 ');
+        btn2.reset(false);
+      });
+  });
+</script>
+</html>
