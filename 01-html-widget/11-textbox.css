@@ -4,37 +4,33 @@ body {
   line-height: 2em;
 }
 
-form{
+form {
   width: 310px;
-  margin: 20px auto 0;
-  padding: 20px 20px;
+  margin: 50px auto;
 }
 
-input, textarea, select, label{
+input, textarea, select, label {
   margin: 10px 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
-textarea{
-  margin-left: 65px;
-  width: 232px;
-}
-
-#study{
+input, select, textarea {
+  box-sizing: border-box;
   width: 240px;
 }
 
-#birth{
-  width: 234px;
+textarea {
+  margin-left: 62px;
 }
 
-#birth, select{
+#birth, select {
   height: 28px;
 }
 
-#btnOk, #btnReset{
+#btnOk, #btnReset {
   position: relative;
-  left: 180px;
+  left: 61px;
+  margin-right: 10px;
   width: 60px;
   height: 30px;
   font-size: 1em;
