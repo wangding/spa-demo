@@ -1,0 +1,55 @@
+body {
+  font-family: 微软雅黑;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+form {
+  width: 340px;
+  margin: 20px auto;
+}
+
+form div {
+  display: flex;
+  item-align: flex-start;
+}
+
+form textarea {
+  margin-left: 5px;
+  resize: none;
+}
+
+input, select {
+  height: 28px;
+}
+
+input, textarea, select {
+  margin: 10px 0;
+  font-size: 0.8em;
+}
+
+input, select, textarea {
+  box-sizing: border-box;
+  width: 240px;
+}
+
+input:invalid+span:after {
+  margin-left: 5px;
+  content: '*';
+  color: red;
+}
+
+select:invalid+span:after {
+  margin-left: 5px;
+  content: '*';
+  color: red;
+}
+
+#btnOk, #btnReset {
+  position: relative;
+  left: 70px;
+  margin-right: 10px;
+  width: 60px;
+  height: 30px;
+  font-size: 1em;
+}

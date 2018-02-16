@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>文本框控件</title>
+  <link rel="stylesheet" href="04-mix-validation.css">
+</head>
+<body>
+ <form>
+   <label>姓　名：</label>
+   <input id="name" type="text" placeholder="二到十个汉字" minlength="2" maxlength="10" required><span></span>
+   <br/>
+   <label>身份证：</label>
+   <input id="name" type="text" placeholder="十八位的新身份证" pattern="\d{17}[0-9xX]" minlength="18" maxlength="18" required><span></span>
+   <br/>
+   <label>学　历：</label>
+   <select id="study" required><span></span>
+     <option value=""></option>
+     <option value="大学本科">大学本科</option>
+     <option value="大学专科">大学专科</option>
+     <option value="硕士">硕士</option>
+     <option value="博士">博士</option>
+   </select>
+   <br/>
+   <label>生　日：</label>
+   <input id="birth" type="date" required><span></span>
+   <br/>
+   <label>手　机：</label>
+   <input id="tell" type="tel" pattern="\d{11}" minlength="11" maxlength="11" required><span></span>
+   <br/>
+   <label>邮　箱：</label>
+   <input id="email" type="email" required><span></span>
+   <br/>
+   <label>网　址：</label>
+   <input id="url" type="url" required><span></span>
+   <br/>
+   <div>
+     <label>简　介：</label>
+     <textarea name="dress" cols="35" rows="10"></textarea>
+   </div>
+   <input id="btnOk" type="submit" value="确定">
+   <input id="btnReset" type="reset" value="重置">
+ </form>
+</body>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="04-mix-validation.js"></script>
+</html>
