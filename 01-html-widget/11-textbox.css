@@ -6,7 +6,17 @@ body {
 
 form {
   width: 310px;
-  margin: 50px auto;
+  margin: 20px auto;
+}
+
+form div {
+  display: flex;
+  item-align: flex-start;
+}
+
+form textarea {
+  margin-left: 5px;
+  resize: none;
 }
 
 input, textarea, select, label {
@@ -17,10 +27,6 @@ input, textarea, select, label {
 input, select, textarea {
   box-sizing: border-box;
   width: 240px;
-}
-
-textarea {
-  margin-left: 62px;
 }
 
 #birth, select {
