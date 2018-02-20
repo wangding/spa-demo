@@ -80,6 +80,14 @@ var spaDemoData = [
     ]
   },
   {
+    'class': 'MVC 和数据绑定',
+    'baseUrl': '06-mvc',
+    'demos': [{
+      'title': '控制方块颜色和大小',
+      'url': 'index.html'
+    }]
+  },
+  {
     'class': '数据存储',
     'baseUrl': '07-storage',
     'demos': [
