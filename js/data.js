@@ -3,7 +3,7 @@ var spaDemoData = [
     'class': '第一个 Web app',
     'baseUrl': '00-first-app',
     'demos': [{
-      'title': '矩形周长和面积计算',
+      'title': '矩形计算器',
       'url': 'index.html'
     }]
   },
@@ -20,11 +20,11 @@ var spaDemoData = [
         'url': '04-button.html'
       },
       {
-        'title': 'HTML 按钮类控件',
+        'title': '按钮类控件',
         'url': '01-button.html'
       },
       {
-        'title': 'HTML 按钮类控件样式设置',
+        'title': '按钮类控件样式设置',
         'url': '02-button.html'
       },
       {

@@ -1,0 +1,55 @@
+.spa-nav-title {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.spa-nav-content a {
+  text-decoration: none;
+  color: rgb(238, 239, 239);
+}
+
+.spa-nav-content summary {
+  background: rgb(52, 60, 71);
+  height: 40px;
+  line-height: 40px;
+  color: rgb(171, 173, 176);
+}
+
+.spa-nav-content ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.spa-nav-content li {
+  display: block;
+  height: 2.5em;
+  line-height: 2.5em;
+  background: rgb(67, 73, 80);
+  color: white;
+  border-top: 1px solid rgb(52, 60, 71);
+  border-bottom: 1px solid rgb(52, 60, 71);
+  padding-left: 10px;
+}
+
+.spa-nav-content li:hover {
+  display: block;
+  background: rgb(52, 60, 71);
+  cursor: pointer;
+}
+
+.spa-nav-content .selected {
+  color: lightgreen;
+}
+
+@media screen and (max-width: 600px) {
+  .spa-nav-title {
+    width: 30px;
+  }
+
+  .spa-nav-content {
+    display: none;
+  }
+}
