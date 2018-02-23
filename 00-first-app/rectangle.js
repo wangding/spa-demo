@@ -23,23 +23,24 @@ $(function() {
   });
 
   function validate(field) {
-    var $data = $(field);
-    var $message = $(field + '-validate');
+    var $data = $(field),
+      $message = $(field + '-validate'),
+      label = $(field).attr('data-label');
 
     if($data.val() === '') {
-      $message.html('宽度不能为空！');
+      $message.html(label + '不能为空！');
       $data.select();
       return;
     }
 
     if(!/^-?\d*\.?\d*$/.test($data.val())) {
-      $message.html('宽度必须是数值');
+      $message.html(label + '必须是数值');
       $data.select();
       return;
     }
 
     if(window.Number($data.val()) < 0) {
-      $message.html('宽度必须大于零');
+      $message.html(label + '必须大于零');
       $data.select();
       return;
     }
