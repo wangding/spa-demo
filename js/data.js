@@ -36,11 +36,11 @@ var spaDemoData = [
         'url': '11-textbox.html'
       },
       {
-        'title': '密码框强度检测',
+        'title': '密码强度检测',
         'url': '12-password.html'
       },
       {
-        'title': '密码框可见操作',
+        'title': '密码可见',
         'url': '13-password.html'
       },
       {
@@ -54,6 +54,24 @@ var spaDemoData = [
       {
         'title': '进度条控件',
         'url': '41-progress.html'
+      }
+    ]
+  },
+  {
+    'class': '数据存储',
+    'baseUrl': '07-storage',
+    'demos': [
+      {
+        'title': '按钮状态保持 1',
+        'url': '01-local-storage.html'
+      },
+      {
+        'title': '按钮状态保持 2',
+        'url': '02-history.html'
+      },
+      {
+        'title': 'LocalStorage 保存图片',
+        'url': '03-image-to-local-storage.html'
       }
     ]
   }
