@@ -58,6 +58,24 @@ var spaDemoData = [
     ]
   },
   {
+    'class': '数据合法性校验',
+    'baseUrl': '02-validation',
+    'demos': [
+      {
+        'title': '字段级验证',
+        'url': '00-field-validation.html'
+      },
+      {
+        'title': '字符级验证',
+        'url': '01-char-validation.html'
+      },
+      {
+        'title': '表单级验证',
+        'url': '02-form-validation.html'
+      }
+    ]
+  },
+  {
     'class': '数据存储',
     'baseUrl': '07-storage',
     'demos': [

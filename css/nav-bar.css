@@ -16,6 +16,7 @@
   height: 40px;
   line-height: 40px;
   color: rgb(171, 173, 176);
+  padding-left: 2px;
 }
 
 .spa-nav-content ul {
@@ -31,7 +32,7 @@
   color: white;
   border-top: 1px solid rgb(52, 60, 71);
   border-bottom: 1px solid rgb(52, 60, 71);
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .spa-nav-content li:hover {
