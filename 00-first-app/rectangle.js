@@ -7,11 +7,11 @@ $(function() {
     var width = $width.val();
     var height = $height.val();
 
-    var perimeter = width * 2 + height * 2;
-    var area = width * height;
+    var p = perimeter(width, height);
+    var a = area(width, height);
 
-    $('#rectangle-perimeter').val(perimeter);
-    $('#rectangle-area').val(area);
+    $('#rectangle-perimeter').val(p);
+    $('#rectangle-area').val(a);
   });
 
   $width.focusout(function() {
@@ -22,6 +22,22 @@ $(function() {
     validate('#rectangle-height');
   });
 
+  function perimeter(x, y) {
+    var lenX = (x.split('.').length === 2) ? x.split('.')[1].length : 0,
+        lenY = (y.split('.').length === 2) ? y.split('.')[1].length : 0;
+
+    var max = Math.max(lenX, lenY);
+    return (x * (10 ** max) + y * (10 ** max)) * 2 / (10 ** max);
+  }
+
+  function area(x, y) {
+    var lenX = (x.split('.').length === 2) ? x.split('.')[1].length : 0,
+        lenY = (y.split('.').length === 2) ? y.split('.')[1].length : 0;
+
+    var max = Math.max(lenX, lenY);
+    return (x * (10 ** max)) * (y * (10 ** max)) / (10 ** (2 * max));
+  }
+  
   function validate(field) {
     var $data = $(field),
       $message = $(field + '-validate'),
@@ -33,7 +49,7 @@ $(function() {
       return;
     }
 
-    if(!/^-?\d*\.?\d*$/.test($data.val())) {
+    if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-]?\d+)?$/.test($data.val())) {
       $message.html(label + '必须是数值');
       $data.select();
       return;
@@ -48,3 +64,5 @@ $(function() {
     $message.html('');
   }
 });
+
+
