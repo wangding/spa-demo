@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>矩形计算器</title>
+  <link rel="stylesheet" href="03-h5-validation.css">
+  <link rel="icon" href="http://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
+</head>
+<body>
+<div class="rectangle">
+  <form>
+    <label>宽度：</label>
+    <input id="rectangle-width" type="number" min="0" autofocus required step="0.00001">
+    <span></span>
+    <br>
+    <div id="rectangle-width-validate"></div>
+    <label>高度：</label>
+    <input id="rectangle-height" type="number" min="0" required step="0.00001">
+    <span></span>
+    <br>
+    <div id="rectangle-height-validate"></div>
+    <input id="rectangle-calc" type="submit" value="计算">
+  </form>
+  <label>周长：</label>
+  <input id="rectangle-perimeter" type="text" disabled>
+  <br>
+  <label>面积：</label>
+  <input id="rectangle-area" type="text" disabled>
+  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="03-h5-validation.js"></script>
+</div>
+</body>
+</html>

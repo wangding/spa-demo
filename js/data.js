@@ -72,6 +72,10 @@ var spaDemoData = [
       {
         'title': '表单级验证',
         'url': '02-form-validation.html'
+      },
+      {
+        'title': 'H5 验证',
+        'url': '03-h5-validation.html'
       }
     ]
   },
