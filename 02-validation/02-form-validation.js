@@ -9,11 +9,8 @@ $(function() {
     
     if(!validate('#rectangle-width') || !validate('#rectangle-height')) return;
 
-    var p = perimeter(width, height);
-    var a= area(width, height);
-
-    $('#rectangle-perimeter').val(p);
-    $('#rectangle-area').val(a);
+    $('#rectangle-perimeter').val(perimeter(width, height));
+    $('#rectangle-area').val(area(width, height));
   });
 
   function perimeter(x, y) {

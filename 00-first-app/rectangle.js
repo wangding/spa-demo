@@ -7,11 +7,8 @@ $(function() {
     var width = $width.val();
     var height = $height.val();
 
-    var p = perimeter(width, height);
-    var a = area(width, height);
-
-    $('#rectangle-perimeter').val(p);
-    $('#rectangle-area').val(a);
+    $('#rectangle-perimeter').val(perimeter(width, height));
+    $('#rectangle-area').val(area(width, height));
   });
 
   $width.focusout(function() {
