@@ -80,6 +80,16 @@ var spaDemoData = [
     ]
   },
   {
+    'class': '第三方组件库',
+    'baseUrl': '03-third-party-widget',
+    'demos': [
+      {
+        'title': '二进熵函数',
+        'url': '01-echart.html'
+      }
+    ]
+  },
+  {
     'class': 'MVC 和数据绑定',
     'baseUrl': '06-mvc',
     'demos': [{
