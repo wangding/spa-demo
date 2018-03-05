@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80%;
+  font-size: 1.2em;
+}
+
+.main {
+  width: 90%;
+  height: 80%;
+  margin: 30px auto;
+}
+
+textarea {
+  font-size: 1em;
+}
+
+input {
+  width: 120px;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+pre {
+  margin: 10px 0;
+}

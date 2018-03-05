@@ -86,6 +86,10 @@ var spaDemoData = [
       {
         'title': '二进熵函数',
         'url': '01-echart.html'
+      },
+      {
+        'title': '语法高亮',
+        'url': '02-heightlight.html'
       }
     ]
   },
