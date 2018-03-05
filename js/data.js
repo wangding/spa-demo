@@ -114,5 +114,15 @@ var spaDemoData = [
         'url': '03-image-to-local-storage.html'
       }
     ]
+  },
+  {
+    'class': '多媒体',
+    'baseUrl': '08-multimedia',
+    'demos': [
+      {
+        'title': '自制滑杆控件',
+        'url': '01-range.html'
+      }
+    ]
   }
 ];
