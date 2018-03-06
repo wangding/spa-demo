@@ -90,6 +90,10 @@ var spaDemoData = [
       {
         'title': '语法高亮',
         'url': '02-heightlight.html'
+      },
+      {
+        'title': 'Excel 表格',
+        'url': '03-excel.html'
       }
     ]
   },
