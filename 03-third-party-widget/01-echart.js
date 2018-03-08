@@ -7,9 +7,6 @@ $(function() {
     yData.push(roundFractional(h(i), 2));
   }
 
-  console.log(xData);
-  console.log(yData);
-
   var myChart = echarts.init($('.main').get(0));
 
   var option = {
