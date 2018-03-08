@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80%;
+  font-size: 1.2em;
+}
+
+.main {
+  width: 90%;
+  height: 80%;
+  margin: 30px auto;
+}
+
+.main p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.main input {
+  width: 120px;
+  height: 40px;
+  font-size: 0.8em;
+}
+
+#formula {
+  width: 250px;
+}
