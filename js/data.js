@@ -94,6 +94,10 @@ var spaDemoData = [
       {
         'title': 'Excel 表格',
         'url': '03-excel.html'
+      },
+      {
+        'title': '数学公式编辑',
+        'url': '05-formula.html'
       }
     ]
   },
