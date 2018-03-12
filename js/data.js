@@ -102,6 +102,14 @@ var spaDemoData = [
     ]
   },
   {
+    'class': '自定义 UI 组件',
+    'baseUrl': '04-ui-component',
+    'demos': [{
+      'title': '定时器按钮',
+      'url': '01-button/09-index.html'
+    }]
+  },
+  {
     'class': 'MVC 和数据绑定',
     'baseUrl': '06-mvc',
     'demos': [{
