@@ -98,6 +98,10 @@ var spaDemoData = [
       {
         'title': '数学公式编辑',
         'url': '05-formula.html'
+      },
+      {
+        'title': '百度地图',
+        'url': '04-map.html'
       }
     ]
   },
