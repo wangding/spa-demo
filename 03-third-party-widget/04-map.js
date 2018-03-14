@@ -20,7 +20,7 @@ $(function() {
   var opts = {
     width : 230,     // 信息窗口宽度
     height: 100,     // 信息窗口高度
-    title : '<a href="http://spa.wangding.in" target"_blank">SPA 富应用开发</a>' 
+    title : '<strong>SPA 富应用开发</strong>' 
   }
 
   var infoWindow = new BMap.InfoWindow(''
