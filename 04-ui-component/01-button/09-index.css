@@ -1,0 +1,48 @@
+body {
+  line-height: 2em;
+}
+
+details summary {
+  background: #c5c5c5;
+  line-height: 30px;
+  outline: none;
+}
+
+details form {
+  padding-left: 17px;
+  padding-bottom: 10px;
+  background: #efefef;
+}
+
+details input, label, textarea {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+details input[type="number"] {
+  width: 170px;
+}
+
+details input[type="text"], textarea {
+  width: 200px;
+}
+
+details textarea {
+  margin-left: 4px;
+}
+
+form div {
+  padding-left: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  item-align: flex-start;
+}
+
+details input[type="submit"] {
+  margin-left: 94px;
+  width: 60px;
+  height: 30px;
+  font-size: 1em;
+}
