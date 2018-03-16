@@ -1,31 +1,28 @@
 $(function() {
-  var $width = $('#rectangle-width');
-  var $height = $('#rectangle-height');
-  var $calc = $('#rectangle-calc');
+  var $width = $('#rectangle-width'),
+    $height = $('#rectangle-height'),
+    $form = $('.rectangle form');
 
-  function perimeter(x, y) {
-    var lenX = (x.split('.').length === 2) ? x.split('.')[1].length : 0,
-    lenY = (y.split('.').length === 2) ? y.split('.')[1].length : 0;
-
-    var max = Math.max(lenX, lenY);
-    return (x * (10 ** max) + y * (10 ** max)) * 2 / (10 ** max);
+  /**
+   * 小数点后面保留第 n 位
+   * 
+   * @param x 做近似处理的数
+   * @param n 小数点后第 n 位
+   * @returns 近似处理后的数 
+   */
+  function roundFractional(x, n) {
+    return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
   }
 
-  function area(x, y) {
-    var lenX = (x.split('.').length === 2) ? x.split('.')[1].length : 0,
-    lenY = (y.split('.').length === 2) ? y.split('.')[1].length : 0;
-
-    var max = Math.max(lenX, lenY);
-    return (x * (10 ** max)) * (y * (10 ** max)) / (10 ** (2 * max));
-  }
-
-  $('.rectangle form').submit(function(e) {
+  $form.submit(function(e) {
     e.preventDefault();         // 阻止表单提交
 
-    var width = $width.val();
-    var height = $height.val();
+    var width = Number($width.val()),
+      height = Number($height.val()),
+      p = roundFractional(width * 2 + height * 2, 2),
+      a = roundFractional(width * height, 2);
 
-    $('#rectangle-perimeter').val(perimeter(width, height));
-    $('#rectangle-area').val(area(width, height));
+    $('#rectangle-perimeter').val(p);
+    $('#rectangle-area').val(a);
   });
 });
