@@ -1,10 +1,8 @@
-var $progress,    // 下载进度条控件
+$(function() {
+  var $progress = $('progress'),    // 下载进度条控件
     timer = 0,    // 定时器对象
     i = 0;        // 进度数值
 
-$(function() {
-  $progress = $('#downloadProgress');
-  
   $('#btnStart').click(function() {
     if(timer !== 0) return;
     

@@ -1,15 +1,19 @@
 $(function(){
-  $('#pwNormal').on('input',function(){
-    $('.pwDisplay').val($('#pwNormal').val());
+  var $pwd = $('#pwd'),
+    $pwdText = $('.pwd-text'),
+    $eye = $('#eye');
+
+  $pwd.on('input', function(){
+    $pwdText.val($pwd.val());
   });
 
-  $('#btnTest').mouseover(function(){
-    $('#btnTest').attr('src','images/eye.png');
-    $('.pwDisplay').css('display','inline-block');
+  $eye.mouseover(function(){
+    $eye.attr('src', 'images/eye.png');
+    $pwdText.css('display', 'block');
   });
 
-  $('#btnTest').mouseout(function(){
-    $('#btnTest').attr('src','images/eye-close.png');
-    $('.pwDisplay').css('display','none');
+  $eye.mouseout(function(){
+    $eye.attr('src', 'images/eye-close.png');
+    $pwdText.css('display', 'none');
   });
 });

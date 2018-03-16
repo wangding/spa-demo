@@ -1,15 +1,11 @@
-var $btnEnabled,       // Enabled 按钮 
-    $btnDisabled,      // Disabled 按钮
-    $btnPlay,          // 图片按钮
-    $btnRound,         // 圆角按钮
-    timer = 0,         // 定时器
-    i;                 // 计数器
-
 $(function() {
-  $btnEnabled = $('#btnEnabled');
-  $btnDisabled = $('#btnDisabled');
-  $btnPlay = $('#btnPlay');
-  $btnRound = $('#btnRound');
+  var $btnEnabled = $('#btnEnabled'),     // Enabled 按钮 
+    $btnDisabled = $('#btnDisabled'),     // Disabled 按钮
+    $btnPlay = $('#btnPlay'),             // 图片按钮
+    $btnRound = $('#btnRound'),           // 圆角按钮
+    timer = 0,                            // 定时器
+    i;                                    // 计数器
+
   init();
 
   function init() {

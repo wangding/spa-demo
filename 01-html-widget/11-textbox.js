@@ -1,6 +1,7 @@
 $(function(){
   $('#btnOk').click(function(){
     var msg = '';
+
     msg += '姓名：' + $('#name').val() + '\n';
     msg += '学历：' + $('#study').val() + '\n';
     msg += '生日：' + $('#birth').val() + '\n';
@@ -8,6 +9,7 @@ $(function(){
     msg += '邮箱：' + $('#email').val() + '\n';
     msg += '网址：' + $('#url').val() + '\n';
     msg += '简介：' + $('textarea').val();
+
     alert(msg);
   });
 });
