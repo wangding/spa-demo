@@ -8,12 +8,10 @@ $(function(){
   });
 
   $eye.mouseover(function(){
-    $eye.attr('src', 'images/eye.png');
-    $pwdText.css('display', 'block');
+    $pwdText.css('z-index', '10');
   });
 
   $eye.mouseout(function(){
-    $eye.attr('src', 'images/eye-close.png');
-    $pwdText.css('display', 'none');
+    $pwdText.css('z-index', '-10');
   });
 });
