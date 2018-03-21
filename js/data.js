@@ -111,7 +111,12 @@ var spaDemoData = [
     'demos': [{
       'title': '定时器按钮',
       'url': '01-button/09-index.html'
-    }]
+    },
+    {
+      'title': '密码可见',
+      'url': '02-password/01-index.html'
+    }
+    ]
   },
   {
     'class': 'MVC 和数据绑定',
