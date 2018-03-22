@@ -1,4 +1,4 @@
-define(['jquery'], function() {
+define(['jquery'], function($) {
   var timerButton = function(config) {
     var cfg = config,                 // 按钮的配置参数
       enabled = cfg.enabled,          // 按钮状态，true 为启用，false 为禁用

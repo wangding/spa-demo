@@ -108,14 +108,19 @@ var spaDemoData = [
   {
     'class': '自定义 UI 组件',
     'baseUrl': '04-ui-component',
-    'demos': [{
-      'title': '定时器按钮',
-      'url': '01-button/09-index.html'
-    },
-    {
-      'title': '密码可见',
-      'url': '02-password/01-index.html'
-    }
+    'demos': [
+      {
+        'title': '定时器按钮',
+        'url': '01-button/09-index.html'
+      },
+      {
+        'title': '密码可见',
+        'url': '02-password/01-index.html'
+      },
+      {
+        'title': '定时器按钮-按需加载',
+        'url': '01-button/10-index.html'
+      }
     ]
   },
   {
