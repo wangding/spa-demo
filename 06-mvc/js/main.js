@@ -1,3 +1,4 @@
+/* global colorView sizeView controller mvcData: true */
 $(function() {
   colorView.init($('.mvc-view1'));
   sizeView.init($('.mvc-view2'));

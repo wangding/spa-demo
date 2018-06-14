@@ -1,3 +1,4 @@
+/* global navBar spaStage: true */
 $(function(){
   navBar.init($('.spa-nav'));
   spaStage.init($('.spa-content'));

@@ -1,6 +1,6 @@
 ﻿/Linux|Android/.test(navigator.userAgent) && (function($) {
-  var proto =  $.ui.mouse.prototype,
-    _mouseInit = proto._mouseInit;
+  var proto      =  $.ui.mouse.prototype,
+      _mouseInit = proto._mouseInit;
 
   $.extend(proto, {
     _mouseInit: function() {

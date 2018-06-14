@@ -11,6 +11,8 @@ $(function() {
   ];
 
   var container = $('.main');
+  
+  /* global Handsontable: true */
   var hot = new Handsontable(container.get(0), {
     data: data,
     contextMenu: true,          // 启用快捷菜单
@@ -27,4 +29,6 @@ $(function() {
       '备注'
     ]
   });
+
+  return hot;
 });

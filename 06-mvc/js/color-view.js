@@ -1,8 +1,8 @@
 (function() {
   var colorView = {},
-    $container,
-    $colorView,
-    nWidth;
+      $container,
+      $colorView,
+      nWidth;
 
   colorView.init = function(container) {
     $container = container;

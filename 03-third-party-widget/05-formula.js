@@ -1,4 +1,5 @@
 $(function() {
+  /* global MathQuill: true */
   var MQ = MathQuill.getInterface(2);
   var formulaSpan = $('#formula').get(0);
   var formula = '';

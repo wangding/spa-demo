@@ -1,7 +1,7 @@
 $(function() {
   var $img = $('.main img'),
-    $btn = $('input[type="submit"]'),
-    $tmpImage;
+      $btn = $('input[type="submit"]'),
+      $tmpImage;
 
   init();
   loadImage();

@@ -1,8 +1,9 @@
 $(function(){
   var $btnAddPwd = $('#add-password'),
-    $btnGetPwd = $('#get-password'),
-    pwdTextboxs = [];
+      $btnGetPwd = $('#get-password'),
+      pwdTextboxs = [];
 
+  /* global PasswordTextbox: true */
   $btnAddPwd.click(function(){
     var pwd = new PasswordTextbox({'container': 'div.main'});
     pwdTextboxs.push(pwd);

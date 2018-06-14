@@ -1,10 +1,11 @@
+/* global define:true */
 define(['jquery'], function($) {
   var timerButton = function(config) {
     var cfg = config,                 // 按钮的配置参数
-      enabled = cfg.enabled,          // 按钮状态，true 为启用，false 为禁用
-      timer,                          // 定时器对象
-      i = cfg.duration,               // 按钮被禁用时长，单位秒
-      $btn = $('<input class="timer-button" type="button">');
+        enabled = cfg.enabled,          // 按钮状态，true 为启用，false 为禁用
+        timer,                          // 定时器对象
+        i = cfg.duration,               // 按钮被禁用时长，单位秒
+        $btn = $('<input class="timer-button" type="button">');
 
     $(cfg.container).append($btn);
 

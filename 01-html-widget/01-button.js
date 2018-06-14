@@ -1,7 +1,7 @@
 $(function() {
-  var $txtName = $('#txtName'),   // 姓名文本框
-    $btnOk = $('#btnOk'),         // 确定按钮 
-    $btnReset = $('#btnReset');   // 重置按钮
+  var $txtName  = $('#txtName'),   // 姓名文本框
+      $btnOk    = $('#btnOk'),     // 确定按钮 
+      $btnReset = $('#btnReset');  // 重置按钮
 
   init();
   

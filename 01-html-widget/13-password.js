@@ -1,7 +1,7 @@
 $(function(){
-  var $pwd = $('#pwd'),
-    $pwdText = $('.pwd-text'),
-    $eye = $('#eye');
+  var $pwd     = $('#pwd'),
+      $pwdText = $('.pwd-text'),
+      $eye     = $('#eye');
 
   $pwd.on('input', function(){
     $pwdText.val($pwd.val());

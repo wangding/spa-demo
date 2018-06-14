@@ -1,7 +1,7 @@
 var $btn, 
-  i = 9,
-  html = '<input class="timer-button" type="button" value="同意">',
-  timer;
+    i = 9,
+    html = '<input class="timer-button" type="button" value="同意">',
+    timer;
 
 $(function() {
   $('div.box').html(html);

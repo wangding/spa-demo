@@ -1,8 +1,8 @@
 (function() {
   var controller = {},
-    $container,
-    _listeners = [],
-    $controller;
+      $container,
+      _listeners = [],
+      $controller;
 
   controller.init = function(container) {
     $container = container;

@@ -1,14 +1,14 @@
 (function(){
-  var navBar = {},
-    isBigWnd = true,          // 是否是大窗口
-    isOpen = false,           // 导航栏是否已经弹出
-    title = {                 // 导航栏的提示文字
-      open: 'Demo 目录',
-      close: '三'
-    },
-    titleClickListeners = [], 
-    itemClickListeners = [],
-    $lastSelected = null;     // 上一次被选中的列表项
+  var navBar   = {},
+      isBigWnd = true,          // 是否是大窗口
+      isOpen   = false,         // 导航栏是否已经弹出
+      title    = {              // 导航栏的提示文字
+        open: 'Demo 目录',
+        close: '三'
+      },
+      titleClickListeners = [], 
+      itemClickListeners = [],
+      $lastSelected = null;     // 上一次被选中的列表项
 
   var dom = function($container, navData) {
     var $nav = $container;
@@ -61,6 +61,7 @@
   navBar.init = function() {
     var width = $(window).innerWidth();
     
+    /* global spaDemoData: true */
     dom($('.spa-nav'), spaDemoData);
 
     isBigWnd = (width <= 600) ? false : true;

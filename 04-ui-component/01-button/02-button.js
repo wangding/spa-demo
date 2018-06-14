@@ -1,6 +1,6 @@
 var $btn, 
-  i = 9,
-  timer;
+    i = 9,
+    timer;
 
 $(function() {
   /*

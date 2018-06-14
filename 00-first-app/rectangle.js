@@ -1,16 +1,16 @@
 $(function() {
-  var $width = $('#rectangle-width'),
-    $height = $('#rectangle-height'),
-    $calc = $('#rectangle-calc'),
-    blnValid = false;
+  var $width   = $('#rectangle-width'),
+      $height  = $('#rectangle-height'),
+      $calc    = $('#rectangle-calc'),
+      blnValid = false;
 
   $calc.click(function() {
     if(!blnValid) return;
 
-    var width = Number($width.val()),
-      height = Number($height.val()),
-      p = roundFractional(width * 2 + height * 2, 2),
-      a = roundFractional(width * height, 2);
+    var width  = Number($width.val()),
+        height = Number($height.val()),
+        p      = roundFractional(width * 2 + height * 2, 2),
+        a      = roundFractional(width * height, 2);
 
     $('#rectangle-perimeter').val(p);
     $('#rectangle-area').val(a);
@@ -42,9 +42,9 @@ $(function() {
    * @returns boolean 验证通过为 true，验证不通过为 false
    */
   function validate(field) {
-    var $data = $(field),
-      $message = $(field + '-validate'),
-      label = $(field).attr('data-label');
+    var $data    = $(field),
+        $message = $(field + '-validate'),
+        label    = $(field).attr('data-label');
 
     if($data.val() === '') {
       $message.html(label + '不能为空！');

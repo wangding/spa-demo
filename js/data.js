@@ -1,3 +1,4 @@
+/* exported spaDemoData */
 var spaDemoData = [
   {
     'class': '第一个 Web app',

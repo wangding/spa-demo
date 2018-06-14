@@ -1,8 +1,8 @@
 $(function() {
-  var $btnAlert = $('#alert'),
-    $btnPrompt = $('#prompt'),
-    $btnConfirm = $('#confirm'),
-    $msg = $('#msg');
+  var $btnAlert   = $('#alert'),
+      $btnPrompt  = $('#prompt'),
+      $btnConfirm = $('#confirm'),
+      $msg        = $('#msg');
   
   $btnAlert.click(function(){
     alert('JavaScript 是一门伟大的编程语言！');

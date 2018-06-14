@@ -1,9 +1,10 @@
+/* exported $timerButton */
 var $timerButton = (function() {
   var init;
   var $btn, 
-    i = 9,
-    html = '<input class="timer-button" type="button" value="同意">',
-    timer;
+      i = 9,
+      html = '<input class="timer-button" type="button" value="同意">',
+      timer;
 
   init = function() {
     $('div.box').html(html);

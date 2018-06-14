@@ -1,9 +1,10 @@
+/* exported TimerButton */
 var TimerButton = function(config) {
   var $btn, 
-    i = config.duration,
-    html = '<input class="timer-button" type="button" value="">',
-    enabled = config.enabled,
-    timer;
+      i = config.duration,
+      html = '<input class="timer-button" type="button" value="">',
+      enabled = config.enabled,
+      timer;
 
   $(config.container).html(html);
   $btn = $(config.container + '>input.timer-button');

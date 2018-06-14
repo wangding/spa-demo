@@ -1,12 +1,13 @@
 $(function() {
   var xData = [],
-    yData = [];
+      yData = [];
 
   for(var i = 0; i <= 1; i += 0.1) {
     xData.push(roundFractional(i, 1));
     yData.push(roundFractional(h(i), 2));
   }
 
+  /* global echarts: true */
   var myChart = echarts.init($('.main').get(0));
 
   var option = {

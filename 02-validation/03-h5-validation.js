@@ -1,7 +1,7 @@
 $(function() {
-  var $width = $('#rectangle-width'),
-    $height = $('#rectangle-height'),
-    $form = $('.rectangle form');
+  var $width  = $('#rectangle-width'),
+      $height = $('#rectangle-height'),
+      $form   = $('.rectangle form');
 
   /**
    * 小数点后面保留第 n 位
@@ -17,10 +17,10 @@ $(function() {
   $form.submit(function(e) {
     e.preventDefault();         // 阻止表单提交
 
-    var width = Number($width.val()),
-      height = Number($height.val()),
-      p = roundFractional(width * 2 + height * 2, 2),
-      a = roundFractional(width * height, 2);
+    var width  = Number($width.val()),
+        height = Number($height.val()),
+        p      = roundFractional(width * 2 + height * 2, 2),
+        a      = roundFractional(width * height, 2);
 
     $('#rectangle-perimeter').val(p);
     $('#rectangle-area').val(a);

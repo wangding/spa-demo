@@ -1,3 +1,4 @@
+/* global require requirejs:true */
 requirejs.config({
   'paths': {
     'jquery': '//apps.bdimg.com/libs/jquery/2.1.4/jquery.min'
@@ -7,10 +8,10 @@ requirejs.config({
 require(['jquery'], function($) {
   $(function() {
     var radStatus,
-      txtTime = $('details input[type="number"]'),
-      txtTitle = $('details input[type="text"]'),
-      txtCode = $('details textarea'),
-      fmButton = $('details form');
+        txtTime  = $('details input[type="number"]'),
+        txtTitle = $('details input[type="text"]'),
+        txtCode  = $('details textarea'),
+        fmButton = $('details form');
 
     fmButton.submit(function(e) {
       e.preventDefault();

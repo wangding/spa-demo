@@ -1,4 +1,5 @@
 $(function() {
+  /* global Behave hljs: true */
   var editor = new Behave({
     textarea: $('.main textarea').get(0),
     replaceTab: true,
@@ -13,7 +14,7 @@ $(function() {
 
   $('input[type="button"]').click(function() {
     var $code = $('<div><pre class="javascript"></pre></div>'),
-      $txt = $('.main textarea');
+        $txt  = $('.main textarea');
 
     if($txt.val() !== '') {
       $code.find('pre').html($txt.val());
@@ -21,4 +22,6 @@ $(function() {
       $('.main').append($code);
     }
   });
+
+  return editor;
 });

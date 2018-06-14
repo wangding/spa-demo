@@ -1,8 +1,9 @@
+/* exported PasswordTextbox */
 var PasswordTextbox = function(config) {
-  var $pwd = $('<input type="password">'),
-    $pwdText = $('<input type="text">'),
-    $eye = $('<div></div>'),
-    $div = $('<div class="wd-password">密码：</div>');
+  var $pwd     = $('<input type="password">'),
+      $pwdText = $('<input type="text">'),
+      $eye     = $('<div></div>'),
+      $div     = $('<div class="wd-password">密码：</div>');
 
   $div.append($pwd);
   $div.append($eye);

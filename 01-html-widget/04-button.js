@@ -1,7 +1,7 @@
 $(function() {
   var $btn = $('input[type="button"]'), 
-    i = 9,
-    timer;
+      i    = 9,
+      timer;
 
   $btn.val('同意 (' + i + ' s)');
   $btn.attr('disabled', 'disabled');

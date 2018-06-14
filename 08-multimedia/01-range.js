@@ -1,3 +1,4 @@
+/* exported RangeWidget */
 var RangeWidget = (function() {
   function RangeWidget(min, max) {
     this.min = min;
@@ -17,7 +18,7 @@ var RangeWidget = (function() {
 
     $slider.on('drag', function(e, ui) {
       var width = $range.innerWidth() - $slider.innerWidth() + 1,
-        pos = ui.position.left;
+          pos   = ui.position.left;
 
       if(pos < 0 || pos >= width) e.preventDefault();
 
