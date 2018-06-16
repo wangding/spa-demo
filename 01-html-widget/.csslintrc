@@ -3,6 +3,7 @@
     "order-alphabetical",
     "ids" ,
     "box-model" ,
-    "outline-none" 
+    "outline-none",
+    "box-sizing"
   ]
 }

@@ -1,8 +1,8 @@
 $(function() {
-  var $btnEnabled  = $('#btnEnabled'),     // Enabled 按钮 
-      $btnDisabled = $('#btnDisabled'),    // Disabled 按钮
-      $btnPlay     = $('#btnPlay'),        // 图片按钮
-      $btnRound    = $('#btnRound'),       // 圆角按钮
+  var $btnEnabled  = $('#enabled-button'),     // Enabled 按钮 
+      $btnDisabled = $('#disabled-button'),    // Disabled 按钮
+      $btnPlay     = $('#play-button'),        // 图片按钮
+      $btnRound    = $('#round-button'),       // 圆角按钮
       timer        = 0,                    // 定时器
       i;                                   // 计数器
 
@@ -39,11 +39,11 @@ $(function() {
     $('#status').text('播放');
   });
 
-  $('#btnPause').click(function(){
+  $('#pause-button').click(function(){
     $('#status').text('暂停');
   });
 
-  $('#btnStop').click(function(){
+  $('#stop-button').click(function(){
     $('#status').text('关闭');
   });
 

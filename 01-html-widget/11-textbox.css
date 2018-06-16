@@ -11,7 +11,7 @@ form {
 
 form div {
   display: flex;
-  item-align: flex-start;
+  align-items: flex-start;
 }
 
 form textarea {
@@ -33,7 +33,7 @@ input, select, textarea {
   height: 28px;
 }
 
-#btnOk, #btnReset {
+#ok-button, #reset-button {
   position: relative;
   left: 61px;
   margin-right: 10px;

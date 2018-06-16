@@ -1,8 +1,7 @@
 {
-  "ignore": [
-    "order-alphabetical",
-    "ids" ,
-    "box-model" ,
-    "outline-none" 
-  ]
+  "order-alphabetical": false,
+  "ids": false ,
+  "box-model": false,
+  "outline-none": false,
+  "box-sizing": false
 }

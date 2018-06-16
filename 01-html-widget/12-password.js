@@ -1,7 +1,7 @@
 $(function(){
-  var $pwd     = $('#pwNormal'),
-      $pwdText = $('#pwDisplay'),
-      $btnTest = $('#btnTest');
+  var $pwd     = $('#pwd-normal'),
+      $pwdText = $('#pwd-display'),
+      $btnTest = $('#test-button');
 
   $pwd.keydown(function() {
     $pwdText.val($pwd.val());

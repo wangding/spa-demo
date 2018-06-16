@@ -3,7 +3,7 @@ $(function() {
       timer     = 0,                // 定时器对象
       i         = 0;                // 进度数值
 
-  $('#btnStart').click(function() {
+  $('#start-button').click(function() {
     if(timer !== 0) return;
     
     timer = window.setInterval(function() {
@@ -11,12 +11,12 @@ $(function() {
     }, 100);
   });
 
-  $('#btnStop').click(function() {
+  $('#stop-button').click(function() {
     window.clearInterval(timer);
     timer = 0;
   });
   
-  $('#btnReset').click(function() {
+  $('#reset-button').click(function() {
     $progress.attr('value', i = 0);
   });
 });

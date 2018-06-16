@@ -1,5 +1,5 @@
 $(function(){
-  $('#btnOk').click(function(){
+  $('#ok-button').click(function(){
     var msg = '';
 
     msg += '姓名：' + $('#name').val() + '\n';

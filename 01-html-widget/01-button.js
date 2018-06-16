@@ -1,14 +1,14 @@
 $(function() {
-  var $txtName  = $('#txtName'),   // 姓名文本框
-      $btnOk    = $('#btnOk'),     // 确定按钮 
-      $btnReset = $('#btnReset');  // 重置按钮
+  var $userName  = $('#user-name'),   // 姓名文本框
+      $btnOk    = $('#ok-button'),    // 确定按钮 
+      $btnReset = $('#reset-button'); // 重置按钮
 
   init();
   
   $btnOk.click(function() {
     var msg = '';
 
-    msg += '姓名：' + $txtName.val() + '\n';
+    msg += '姓名：' + $userName.val() + '\n';
     msg += '性别：' + $('input[type="radio"][name="gender"]:checked').val() + '\n';
     
     var techs = $('input[type="checkbox"][name="tech"]:checked').map(function() {
@@ -23,7 +23,7 @@ $(function() {
   $btnReset.click(init);
     
   function init() {
-    $txtName.val('王顶');
+    $userName.val('王顶');
     $('input[type="radio"]').val(['男']);
     $('input[type="checkbox"]').val(['HTML', 'CSS', 'JavaScript']);
   }

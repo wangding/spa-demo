@@ -47,19 +47,19 @@ input {
   font-size: 1.1em;
 }
 
-#btnPlay {
+#play-button {
   background-image: url('images/paly.png');
 }
 
-#btnPause {
+#pause-button {
   background-image: url('images/pause.png');
 }
 
-#btnStop {
+#stop-button {
   background-image: url('images/stop.png');
 }
 
-#btnPlay, #btnPause, #btnStop {
+#play-button, #pause-button, #stop-button {
   background-size: contain;
   width: 40px;
   border-radius: 20px;

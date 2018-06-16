@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SPA RIA web application develop",
   "scripts": {
-    "test": "eslint --quiet *",
+    "test": "grunt lint && eslint --quiet *",
     "build": "grunt build"
   },
   "main": "index.js",
@@ -22,7 +22,10 @@
     "grunt": "^1.0.3",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify": "^3.3.0",
     "grunt-htmlhint": "^0.9.13"
   }
 }
