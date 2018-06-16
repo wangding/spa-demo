@@ -6,7 +6,6 @@
     "test": "grunt lint && eslint --quiet *",
     "build": "grunt build"
   },
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wangding/spa.git"
