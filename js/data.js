@@ -82,7 +82,7 @@ var spaDemoData = [
   },
   {
     'class': '第三方组件库',
-    'baseUrl': '03-third-party-widget',
+    'baseUrl': '03-third-part-widget',
     'demos': [
       {
         'title': '二进熵函数',
