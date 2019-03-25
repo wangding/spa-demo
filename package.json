@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SPA RIA web application develop",
   "scripts": {
-    "test": "grunt lint && eslint --quiet *",
+    "test": "grunt lint",
     "build": "grunt build"
   },
   "repository": {
@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/wangding/spa#readme",
   "devDependencies": {
-    "eslint": "^4.19.1",
     "grunt": "^1.0.3",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-csslint": "^2.0.0",
@@ -25,6 +24,7 @@
     "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-uglify": "^3.3.0",
+    "grunt-eslint": "^21.0.0",
     "grunt-htmlhint": "^0.9.13"
   }
 }

@@ -58,6 +58,16 @@ module.exports = function (grunt) {
         htmlhintrc: '.htmlhintrc'
       },
       src: ['*.html', '0?-*/*.html']
+    },
+    eslint: {
+      options: {
+        configFile: '.eslintrc.json'
+      },
+      target: [
+        './**/*.js',
+        '!./node_modules/**/*.js',
+        '!./03-third-part-widget/mathquill/*.js'
+      ]
     }
   });
 
@@ -66,10 +76,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-copy');
-
+  grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-htmlhint');
 
-  grunt.registerTask('lint', ['htmlhint', 'csslint']);
+  grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
   grunt.registerTask('build', ['htmlmin', 'cssmin', 'uglify', 'imagemin', 'copy']);
 };
