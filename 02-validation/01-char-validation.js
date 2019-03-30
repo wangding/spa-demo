@@ -17,11 +17,11 @@ $(function() {
   });
 
   $width.keypress(function(e) {
-    validateKey(e);
+    filterKey(e);
   });
 
   $height.keypress(function(e) {
-    validateKey(e);
+    filterKey(e);
   });
 
   $width.focusout(function() {
@@ -44,13 +44,57 @@ $(function() {
   }
 
   /**
-   * 验证文本框中输入的每个字符
+   * 验证文本框中输入的每个字符，过滤掉非法字符
    *
    * @param e 按键事件
    * @returns {undefined}
    */
-  function validateKey(e) {
-    if(/[abcdf-zABCDF-Z`~!@#$%^&*()=_+[\]{}|;:'",<>/?\\]/.test(e.key)) e.preventDefault();
+  function filterKey(e) {
+    var pos = e.target.selectionStart,
+        content = e.target.value;
+
+    if(/[abcdf-zABCDF-Z`~!@#$%^&*()\-=_+[\]{}|;:'",<>/?\\]/.test(e.key)) {
+      e.preventDefault();
+      return;
+    }
+
+    if(e.key === '.') {
+      if(pos === 0 || content.indexOf('.') !== -1) {
+        e.preventDefault();
+        return;
+      }
+
+      if(pos  === 1 && content.substring(0,1) === '-') {
+        e.preventDefault();
+        return;
+      }
+    }
+
+    if(e.key === 'e') {
+      if(pos === 0 || content.indexOf('e') !== -1 
+          || content.indexOf('E') !== -1) {
+        e.preventDefault();
+        return;
+      }
+
+      if(pos === 1 && content.substring(0,1) === '-') {
+        e.preventDefault();
+        return;
+      }
+    }
+
+    if(e.key === 'E') {
+      if(pos === 0 || content.indexOf('e') !== -1 
+          || content.indexOf('E') !== -1) {
+        e.preventDefault();
+        return;
+      }
+
+      if(pos === 1 && content.substring(0,1) === '-') {
+        e.preventDefault();
+        return;
+      }
+    }
   }
 
   /**
