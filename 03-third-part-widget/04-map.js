@@ -1,7 +1,8 @@
 $(function() {
   /* global BMap BMAP_NORMAL_MAP BMAP_HYBRID_MAP BMAP_ANIMATION_BOUNCE: true */
   var map = new BMap.Map('main');  
-  map.centerAndZoom('河北师范大学软件学院', 25);
+  var point = new BMap.Point(114.529963, 38.003679);
+  map.centerAndZoom(point, 25);
 
   // 添加地图类型控件
   map.addControl(new BMap.MapTypeControl({
@@ -13,7 +14,6 @@ $(function() {
   map.enableScrollWheelZoom(true);     // 开启鼠标滚轮缩放
   map.setMapType(BMAP_HYBRID_MAP);
 
-  var point = new BMap.Point(114.529963, 38.003679);
   var marker = new BMap.Marker(point, {'title': 'SPA 富应用开发'}); 
   marker.setAnimation(BMAP_ANIMATION_BOUNCE);
 
