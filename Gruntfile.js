@@ -8,14 +8,14 @@ module.exports = function (grunt) {
       },
       files: {
         expand: true,
-        src: ['*.html', '0?-*/*.html', '0?-*/0?-*/*.html'],
+        src: ['*.html', '??-*/*.html', '??-*/??-*/*.html'],
         dest: 'dist/'
       }
     },
     cssmin: {
       files: {   
         expand: true,
-        src: ['css/*.css', '0?-*/*.css', '0?-*/0?-*/*.css', '0?-*/css/*.css'],
+        src: ['css/*.css', '??-*/*.css', '??-*/??-*/*.css', '??-*/css/*.css'],
         dest: 'dist/'
       }
     },
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
       main: {
         files: [{
           expand: true,
-          src: ['js/*.js', '0?-*/*.js', '0?-*/0?-*/*.js', '0?-*/js/*.js'],
+          src: ['js/*.js', '??-*/*.js', '??-*/0?-*/*.js', '??-*/js/*.js'],
           dest: 'dist/'
         }]
       }
