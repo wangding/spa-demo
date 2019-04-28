@@ -1,6 +1,7 @@
 $(function() {
-  var $img = $('.main img'),
-      $btn = $('input[type="submit"]'),
+  var $img = $('img'),
+      $url = $('input[type="url"]'),
+      $btn = $('input[type="button"]'),
       $tmpImage;
 
   init();
@@ -13,11 +14,16 @@ $(function() {
 
   function loadImage() {
     var str = localStorage.getItem('img');
-    if(str) $img.attr('src', str);
+    if(str) {
+      $img.attr('src', str);
+    } else {
+      $img.css({display: 'none'});
+    }
   }
 
   $btn.click(function() {
-    $tmpImage.attr('src', $('input[type="url"]').val());
+    $tmpImage.attr('src', $url.val());
+    $url.val('');
   });
 
   $tmpImage.load(function() {

@@ -5,27 +5,18 @@ html, body {
   height: 90%;
 }
 
-.main {
-  width: 370px;
-  margin: 40px auto 0;
-  font-size: 1em;
-}
-
-.main input {
+input {
   font-size: 1.1em;
 }
 
-.main input[type="submit"] {
+input[type="submit"] {
   width: 60px;
 }
 
-.main input[type="url"] {
+input[type="url"] {
   width: 300px;
 }
 
-.main div {
-  margin-top: 10px;
-  width: 100%;
-  overflow-x: scroll;
+img {
+  margin: 10px auto;
 }
-
