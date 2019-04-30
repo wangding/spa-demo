@@ -1,9 +1,6 @@
 # dist grunt output directory
 dist/
 
-# vim plugin
-.tern-project
-
 # Logs
 logs
 *.log
