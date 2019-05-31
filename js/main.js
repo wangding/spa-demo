@@ -1,7 +1,8 @@
-/* global navBar spaStage: true */
+/* global navBar spaStage $forkMeGH: true */
 $(function(){
   navBar.init($('.spa-nav'));
   spaStage.init($('.spa-content'));
+  $forkMeGH.show('https://github.com/wangding/spa-demo');
 
   navBar.on('title-click', function(isOpen) {
     var display = isOpen ? 'none': 'block';
