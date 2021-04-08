@@ -1,6 +1,6 @@
-$(function() {
+$(() => {
   /* global Behave hljs: true */
-  var editor = new Behave({
+  let editor = new Behave({
     textarea: $('.main textarea').get(0),
     replaceTab: true,
     softTabs: true,
@@ -12,8 +12,8 @@ $(function() {
     fence: false
   });
 
-  $('input[type="button"]').click(function() {
-    var $code = $(''
+  $('input[type="button"]').click(() => {
+    let $code = $(''
         + '<div>'
           + '<pre class="javascript">'
           + '</pre>'
@@ -28,17 +28,15 @@ $(function() {
       $('.main').append($code);
     }
 
-    var $del = $code.find('i.icon-delete'),
+    let $del = $code.find('i.icon-delete'),
         $copy = $code.find('i.icon-clipboard');
 
-    $del.click(function() {
-      $code.remove();
-    });
+    $del.click(() => $code.remove());
 
-    $copy.click(function() {
-      var $content = $code.find('pre');
+    $copy.click(() => {
+      let $content = $code.find('pre');
 
-      var range = document.createRange();
+      let range = document.createRange();
       range.selectNode($content[0]);
       window.getSelection().addRange(range);
 

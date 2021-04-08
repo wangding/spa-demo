@@ -1,5 +1,5 @@
-$(function() {
-  var data = [
+$(() => {
+  let data = [
     ['login_name', '登录名', 'C(9)', 'N', 'Y', ''],
     ['password', '密码', 'C(9)', 'N', 'N', ''],
     ['chinese_name', '中文名', 'C(10)', 'N', 'N', ''],
@@ -10,14 +10,14 @@ $(function() {
     ['comment', '备注', 'C(100)', 'Y', 'N', '']
   ];
 
-  var container = $('.main');
-  
+  let container = $('.main');
+
   /* global Handsontable: true */
-  var hot = new Handsontable(container.get(0), {
+  let hot = new Handsontable(container.get(0), {
     data: data,
     contextMenu: true,          // 启用快捷菜单
-    manualRowResize : true,     // 允许行拖动  
-    manualColumnResize : true,  // 允许列拖动 
+    manualRowResize : true,     // 允许行拖动
+    manualColumnResize : true,  // 允许列拖动
     rowHeaders: true,
     //colHeaders: true
     colHeaders: [
