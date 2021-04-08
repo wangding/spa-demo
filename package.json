@@ -23,7 +23,8 @@
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-imagemin": "^2.0.1",
-    "grunt-contrib-uglify": "^3.3.0",
+    "@wangding/grunt-qiniu-qupload": "^0.2.1",
+    "grunt-terser": "^1.0.0",
     "grunt-eslint": "^21.0.0",
     "grunt-htmlhint": "^0.9.13"
   }

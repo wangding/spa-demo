@@ -26,7 +26,7 @@ module.exports = function (grunt) {
         dest: 'dist/'
       }
     },
-    uglify: {
+    terser: {
       main: {
         files: [{
           expand: true,
@@ -45,6 +45,16 @@ module.exports = function (grunt) {
             dest: 'dist/03-third-part-widget/'
           }
         ]
+      }
+    },
+    qiniu_qupload: {
+      default_options: {
+        options: {
+          ak: 'QINIU_AK',
+          sk: 'QINIU_SK',
+          bucket: 'app-spa-demo',
+          assets: [{src: 'dist', prefix: ''}]
+        }
       }
     },
     csslint: {
@@ -71,15 +81,16 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-terser');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-htmlhint');
+  grunt.loadNpmTasks('@wangding/grunt-qiniu-qupload');
 
   grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
-  grunt.registerTask('build', ['htmlmin', 'cssmin', 'uglify', 'imagemin', 'copy']);
+  grunt.registerTask('build', ['htmlmin', 'cssmin', 'terser', 'copy']);
+  grunt.registerTask('upload', ['qiniu_qupload']);
 };

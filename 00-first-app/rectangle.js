@@ -1,71 +1,70 @@
-$(function() {
-  var $width   = $('#rectangle-width'),
-      $height  = $('#rectangle-height'),
-      $calc    = $('#rectangle-calc'),
-      blnValid = false;
+const q = document.querySelector,
+      $ = q.bind(document);
 
-  $calc.click(function() {
-    if(!blnValid) return;
+let $width   = $('#rectangle-width'),
+    $height  = $('#rectangle-height'),
+    $btnCalc = $('#rectangle-calc');
 
-    var width  = Number($width.val()),
-        height = Number($height.val()),
-        p      = roundFractional(width * 2 + height * 2, 2),
-        a      = roundFractional(width * height, 2);
+$btnCalc.onclick = () => {
+  if(!validate('#rectangle-width') || !validate('#rectangle-height')) return;
 
-    $('#rectangle-perimeter').val(p);
-    $('#rectangle-area').val(a);
-  });
+  let w = Number($width.value),
+      h = Number($height.value),
+      p = roundFractional(w * 2 + h * 2, 2),
+      a = roundFractional(w * h, 2);
 
-  $width.focusout(function() {
-    blnValid = validate('#rectangle-width');
-  });
-  
-  $height.focusout(function() {
-    blnValid = validate('#rectangle-height');
-  });
-  
-  /**
-   * 小数点后面保留第 n 位
-   * 
-   * @param x 做近似处理的数
-   * @param n 小数点后第 n 位
-   * @returns 近似处理后的数 
-   */
-  function roundFractional(x, n) {
-    return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
+  $('#rectangle-perimeter').value = p;
+  $('#rectangle-area').value = a;
+};
+
+$width.onblur = () => {
+  validate('#rectangle-width');
+};
+
+$height.onblur = () => {
+  validate('#rectangle-height');
+};
+
+/**
+ * 小数点后面保留第 n 位
+ *
+ * @param {Number} x 做近似处理的数
+ * @param {Number} n 小数点后第 n 位
+ * @returns {Number} 近似处理后的数
+ */
+function roundFractional(x, n) {
+  return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
+}
+
+/**
+ * 对字段进行数据合法性校验
+ *
+ * @param {String} field 字段的 id
+ * @returns {Boolean} 验证通过为 true，验证不通过为 false
+ */
+function validate(field) {
+  var $data    = $(field),
+      $message = $(field + '-validate'),
+      label    = $(field).getAttribute('data-label');
+
+  if($data.value === '') {
+    $message.innerHTML = label + '不能为空！';
+    $data.select();
+    return false;
   }
 
-  /**
-   * 对字段进行数据合法性校验
-   *
-   * @param field 字段的 id
-   * @returns boolean 验证通过为 true，验证不通过为 false
-   */
-  function validate(field) {
-    var $data    = $(field),
-        $message = $(field + '-validate'),
-        label    = $(field).attr('data-label');
-
-    if($data.val() === '') {
-      $message.html(label + '不能为空！');
-      $data.select();
-      return false;
-    }
-
-    if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-]?\d+)?$/.test($data.val())) {
-      $message.html(label + '必须是数值');
-      $data.select();
-      return false;
-    }
-
-    if(window.Number($data.val()) < 0) {
-      $message.html(label + '必须大于零');
-      $data.select();
-      return false;
-    }
-
-    $message.html('');
-    return true;
+  if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-]?\d+)?$/.test($data.value)) {
+    $message.innerHTML = label + '必须是数值';
+    $data.select();
+    return false;
   }
-});
 
+  if(Number($data.value) < 0) {
+    $message.innerHTML = label + '必须大于零';
+    $data.select();
+    return false;
+  }
+
+  $message.innerHTML = '';
+  return true;
+}
