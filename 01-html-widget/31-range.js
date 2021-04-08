@@ -1,11 +1,7 @@
-$(function() {
-  var $range = $('#range'),   // range 控件
-      $age   = $('#age');     // 年龄文本
+const q = document.querySelector,
+      $ = q.bind(document);
 
-  $age.html($range.val());
-  
-  $range.change(function() {
-    $age.html($range.val());
-  });
-});
+let $range = $('#range'),
+    $age   = $('#age');
 
+$range.onchange = () => $age.innerText = $range.value;

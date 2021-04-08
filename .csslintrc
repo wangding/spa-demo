@@ -3,5 +3,6 @@
   "ids": false ,
   "box-model": false,
   "outline-none": false,
+  "adjoining-classes": false,
   "box-sizing": false
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
   <title>按钮事件处理</title>
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/wangding/i@master/favicon.ico" sizes="48x48" type="image/png">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg" sizes="48x48">
   <style>
   .box {
     display: block;
@@ -18,12 +18,10 @@
 <body>
   <input class="box" type="button" value="我是按钮">
 </body>
-<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
-  $(function() {
-    $('input[type="button"]').click(function() {
-      alert('一不小心就被你点了！');
-    });
-  });
+  const q = document.querySelector,
+        $ = q.bind(document);
+
+  $('input').onclick = () => alert('一不小心就被你点了！');
 </script>
 </html>

@@ -1,25 +1,22 @@
-$(function() {
-  var $progress = $('progress'),    // 下载进度条控件
-      timer     = 0,                // 定时器对象
-      i         = 0;                // 进度数值
+const q = document.querySelector,
+      $ = q.bind(document);
 
-  $('#start-button').click(function() {
-    if(timer !== 0) return;
-    
-    timer = window.setInterval(function() {
-      $progress.attr('value', i++);
-    }, 100);
-  });
+let $progress = $('progress'),    // 下载进度条控件
+    timer     = 0,                // 定时器对象
+    i         = 0;                // 进度数值
 
-  $('#stop-button').click(function() {
-    window.clearInterval(timer);
-    timer = 0;
-  });
-  
-  $('#reset-button').click(function() {
-    $progress.attr('value', i = 0);
-  });
-});
+$('#start-button').onclick = () => {
+  if(timer !== 0) return;
+
+  timer = window.setInterval(() => $progress.setAttribute('value', i++), 100);
+};
+
+$('#stop-button').onclick = () => {
+  window.clearInterval(timer);
+  timer = 0;
+};
+
+$('#reset-button').onclick = () => $progress.setAttribute('value', i = 0);
 
 // 问题：
 //  1. i 的数值超过边界应该自动重置

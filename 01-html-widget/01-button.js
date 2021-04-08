@@ -1,31 +1,32 @@
-$(function() {
-  var $userName  = $('#user-name'),   // 姓名文本框
-      $btnOk    = $('#ok-button'),    // 确定按钮 
-      $btnReset = $('#reset-button'); // 重置按钮
+const q = document.querySelector,
+      $ = q.bind(document),
+      qa= document.querySelectorAll,
+      $$= qa.bind(document);
 
-  init();
-  
-  $btnOk.click(function() {
-    var msg = '';
+let $userName  = $('#user-name'),    // 姓名文本框
+    $btnOk     = $('#ok-button'),    // 确定按钮
+    $btnReset  = $('#reset-button'); // 重置按钮
 
-    msg += '姓名：' + $userName.val() + '\n';
-    msg += '性别：' + $('input[type="radio"][name="gender"]:checked').val() + '\n';
-    
-    var techs = $('input[type="checkbox"][name="tech"]:checked').map(function() {
-      return $(this).val();
-    }).toArray().join('，');
+$btnOk.onclick = () => {
+  let msg = '';
 
-    msg += '技术特长：' + techs + '\n';
+  msg += '姓名：' + $userName.value + '\n';
+  msg += '性别：' + $('input[name="gender"]:checked').value + '\n';
 
-    alert(msg);
-  });
+  let nds = $$('input[name="tech"]:checked');
+  nds = [...nds];
 
-  $btnReset.click(init);
-    
-  function init() {
-    $userName.val('王顶');
-    $('input[type="radio"]').val(['男']);
-    $('input[type="checkbox"]').val(['HTML', 'CSS', 'JavaScript']);
-  }
-});
+  msg += '技术特长：' + nds.map(function(n) { return n.value; }).join('，') + '\n';
 
+  alert(msg);
+};
+
+$btnReset.onclick = () => {
+  $userName.value = '';
+
+  let nds = $$('input[type="radio"]');
+  for(let n of nds) n.checked = false;
+
+  nds = $$('input[type="checkbox"]');
+  for(let n of nds) n.checked = false;
+};

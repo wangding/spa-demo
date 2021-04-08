@@ -62,6 +62,11 @@ input {
 #play-button, #pause-button, #stop-button {
   background-size: contain;
   width: 40px;
+  border: 0 solid white;
   border-radius: 20px;
   outline: none;
+}
+
+#round-button {
+  border-radius: 10px;
 }

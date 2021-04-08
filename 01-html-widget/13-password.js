@@ -1,17 +1,10 @@
-$(function(){
-  var $pwd     = $('#pwd'),
-      $pwdText = $('.pwd-text'),
-      $eye     = $('#eye');
+const q = document.querySelector,
+      $ = q.bind(document);
 
-  $pwd.on('input', function(){
-    $pwdText.val($pwd.val());
-  });
+let $pwd     = $('#pwd'),
+    $pwdText = $('.pwd-text'),
+    $eye     = $('#eye');
 
-  $eye.mouseover(function(){
-    $pwdText.css('z-index', '10');
-  });
-
-  $eye.mouseout(function(){
-    $pwdText.css('z-index', '-10');
-  });
-});
+$pwd.oninput = () => $pwdText.value = $pwd.value;
+$eye.onmouseover = () => $pwdText.className = 'pwd-text up';
+$eye.onmouseout = () => $pwdText.className = 'pwd-text down';
