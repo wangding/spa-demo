@@ -1,0 +1,1 @@
+!function(){var a={init:function(a){var r=$('<iframe frameborder="0"></iframe>');r.attr("src","00-first-app/index.html"),a.append(r)},show:function(a){a.display&&$(".spa-content").css({display:a.display}),a.href&&$(".spa-content iframe").attr("src",a.href)}};window.spaStage=a}();

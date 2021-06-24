@@ -1,0 +1,1 @@
+$((function(){var n=$(".main input"),o=0;function t(o){n.val("被按了 "+o+" 次")}t(o),n.click((function(){var n=location.origin+location.pathname+"#/"+ ++o;history.pushState(null,null,n),t(o)})),$(window).on("popstate",(function(){t(o=""===(o=location.href.match(/(\d*)$/)[0])?0:o)}))}));

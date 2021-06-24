@@ -1,0 +1,1 @@
+const q=document.querySelector,$=q.bind(document);let timer,$btn=$('input[type="button"]'),i=9;$btn.value="同意 ("+i+" s)",$btn.setAttribute("disabled","disabled"),timer=setInterval(()=>{$btn.value="同意 ("+i--+" s)",-1===i&&(clearInterval(timer),$btn.value="同意",$btn.removeAttribute("disabled"))},1e3),$btn.onclick=()=>alert("就知道你会同意的！");

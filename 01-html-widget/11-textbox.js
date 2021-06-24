@@ -1,0 +1,1 @@
+const q=document.querySelector,$=q.bind(document);$("#ok-button").onclick=()=>{let e="";e+="姓名："+$("#name").value+"\n",e+="学历："+$("#study").value+"\n",e+="生日："+$("#birth").value+"\n",e+="手机："+$("#tell").value+"\n",e+="邮箱："+$("#email").value+"\n",e+="网址："+$("#url").value+"\n",e+="简介："+$("textarea").value,alert(e)};

@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"><title>按钮事件处理</title><link rel="icon" href="https://cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg" sizes="48x48"><style>.box {
+    display: block;
+    margin: 50px auto;
+    width: 130px;
+    height: 70px;
+    font-size: 1.3em;
+  }</style></head><body><input class="box" type="button" value="我是按钮"></body><script>const q = document.querySelector,
+        $ = q.bind(document);
+
+  $('input').onclick = () => alert('一不小心就被你点了！');</script></html>

@@ -1,0 +1,1 @@
+body,html{margin:0;padding:0;height:100%;width:100%}.mvc{width:100%;height:100%;font-size:0}.mvc-view1,.mvc-view2{box-sizing:border-box;width:50%;height:70%;display:inline-block;border:10px solid #e9e9e9}.mvc-view3{box-sizing:border-box;height:30%;width:100%;border:10px solid #e9e9e9}@media screen and (max-width:600px){.mvc-view1,.mvc-view2{width:100%;height:40%;display:block}}

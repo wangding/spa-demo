@@ -1,0 +1,1 @@
+!function(){var n,t,o={},l=[];o.init=function(o){n=o,t=$('<input class="mvc-controller" type="range" min="0" max="255" value="0" title="Controller">'),n.append(t),t.change((function(){l.forEach((function(n){n.call(this,t.val())}))}))},o.on=function(n){l.push(n)},o.setValue=function(n){t.val(n)},window.controller=o}();

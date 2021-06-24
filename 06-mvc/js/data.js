@@ -1,0 +1,1 @@
+$((function(){var n={},t=0,c=[];n.set=function(n){var o;t=n,o=n,c.forEach((function(n){n.call(this,o)}))},n.get=function(){return t},n.on=function(n){c.push(n)},window.mvcData=n}));

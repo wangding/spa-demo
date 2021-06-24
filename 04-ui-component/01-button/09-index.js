@@ -1,0 +1,1 @@
+$((function(){var t,e=$('details input[type="number"]'),i=$('details input[type="text"]'),n=$("details textarea");$("details form").submit((function(a){a.preventDefault(),t=$('details input[type="radio"]:checked'),timerButton({container:"div.main",enabled:"true"===t.val(),duration:Number(e.val()),text:i.val()}).on("timer-button-click",new Function(n.val()))}))}));

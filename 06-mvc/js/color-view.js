@@ -1,0 +1,1 @@
+!function(){var i,n,o,e={};e.init=function(e){i=e,n=$('<div class="mvc-colorview" title="Color View"></div>'),i.append(n),o=n.innerWidth(),this.resize()},e.resize=function(){var e=(i.innerHeight()-o)/2;n.css({top:e+"px"})},e.onColorChange=function(i){var n=255-i,o="rgb("+n+","+n+","+n+")";$(".mvc-colorview").css({background:o})},window.colorView=e}();

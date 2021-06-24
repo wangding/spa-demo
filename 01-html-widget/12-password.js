@@ -1,0 +1,1 @@
+const q=document.querySelector,$=q.bind(document);let $pwd=$("#pwd-normal"),$pwdText=$("#pwd-display"),$btnTest=$("#test-button");$pwd.oninput=()=>$pwdText.value=$pwd.value,$btnTest.onclick=()=>{let t,e=$pwd.value;t=e.length<6?"你的密码长度少于六位，强度较弱！":0==/[a-zA-Z]/.test(e)?"你的密码只包含数字，强度较弱!":0==/\d/.test(e)?"你的密码只包含字母，强度较弱！":"你的密码很强壮！",alert(t)};

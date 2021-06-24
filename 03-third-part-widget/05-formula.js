@@ -1,0 +1,1 @@
+$(()=>{let t=MathQuill.getInterface(2),a=$("#formula").get(0),l="",e=t.MathField(a,{handlers:{edit(){let t=e.latex();l=t}}});$('input[type="button"]').click(()=>{let a=$('<p><span class="formula"></span></p>');a.find(".formula").html(l),t.StaticMath(a.find(".formula").get(0)),$(".main").append(a)})});

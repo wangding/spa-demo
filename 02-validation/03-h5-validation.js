@@ -1,0 +1,1 @@
+$(()=>{let e=$("#rectangle-width"),t=$("#rectangle-height");function a(e,t){return Math.round(e*Math.pow(10,t))/Math.pow(10,t)}$(".rectangle form").submit(r=>{r.preventDefault();let l=Number(e.val()),n=Number(t.val()),u=a(2*l+2*n,2),c=a(l*n,2);$("#rectangle-perimeter").val(u),$("#rectangle-area").val(c)})});
